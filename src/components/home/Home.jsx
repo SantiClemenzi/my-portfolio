@@ -13,73 +13,61 @@ import portada from '../../images/programmingScreen.jpg';
 const Home = () => {
 	return (
 		<Box container style={{ padding: '2%' }}>
-			<Grid container lg={12} md={12} sm={12} xs={12}>
-				<Grid item>
-					<p>Iconos de LinkedIn y git hub</p>
-				</Grid>
+			{/* grid de iconos */}
+			<Grid item>
+				<p>Iconos de LinkedIn y git hub</p>
+			</Grid>
+
+			{/* grid contenedor de la imagen y titulo */}
+			<Grid container justifyContent="center" spacing={6}>
+				{/* grid Titulo y botones */}
 				<Grid
+					item
 					container
+					direction="column"
 					justifyContent="center"
-					spacing={6}
-					style={{ padding: '2%' }}
+					alignItems="baseline"
+					lg={6}
+					md={6}
+					sm={12}
+					xs={12}
 				>
-					<Grid
-						container
-						direction="column"
-						justifyContent="center"
-						alignItems="center"
-						lg={6}
-						md={6}
-						sm={12}
-						xs={12}
-					>
-						<Grid>
-							<Typography
-								variant="h4"
-								component="div"
-								sx={{ marginBottom: '1%' }}
-							>
-								Soy Santiago Clemenzi
-							</Typography>
-							<Typography
-								variant="h5"
-								component="div"
-								sx={{ marginTop: '0px' }}
-							>
-								Fullstack Developer
-							</Typography>
-							{/* <h1 style={{ marginBottom: '1%' }}>Soy Santiago Clemenzi</h1> */}
-							{/* <h3 style={{ marginTop: '0px' }}>Fullstack Developer</h3> */}
-							<Grid>
-								<Button variant="outlined" style={{ marginRight: '1%' }}>
-									Contactar
-								</Button>
-								<Button variant="outlined" style={{ marginLeft: '1%' }}>
-									Curriculum
-								</Button>
-							</Grid>
+					{/* grid  Titulo */}
+					<Grid item>
+						<h1 style={{ marginBottom: '1%' }}>Soy Santiago Clemenzi</h1>
+						<h3 style={{ marginTop: '0px' }}>Fullstack Developer</h3>
+						{/* grid botones */}
+						<Grid item lg={12} md={12} sm={12} xs={12}>
+							<Button variant="outlined" sx={{ margin: '1%' }}>
+								Contactar
+							</Button>
+							<Button variant="outlined" sx={{ margin: '1%' }}>
+								Curriculum
+							</Button>
 						</Grid>
 					</Grid>
-					<Grid
-						container
-						direction="column"
-						justifyContent="center"
-						alignItems="center"
-						lg={6}
-						md={6}
-						sm={12}
-						xs={12}
-						// style={{ margin: '0.5%' }}
-					>
-						<Card sx={{ maxWidth: 'auto', maxHeight: 'auto', margin: '5%' }}>
-							<CardMedia
-								component="img"
-								height="400"
-								image={portada}
-								alt="Programming"
-							/>
-						</Card>
-					</Grid>
+				</Grid>
+
+				{/* Grid Imagen */}
+				<Grid
+					item
+					direction="column"
+					justifyContent="center"
+					alignItems="center"
+					lg={6}
+					md={6}
+					sm={12}
+					xs={12}
+				>
+					<Card sx={{ maxWidth: '400' }}>
+						<CardMedia
+							component="img"
+							height="400"
+							width="500"
+							image={portada}
+							alt="Programming"
+						/>
+					</Card>
 				</Grid>
 			</Grid>
 		</Box>
