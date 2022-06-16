@@ -1,5 +1,7 @@
 import * as React from 'react';
 
+// Elements
+import Header from './Header';
 // MUI
 import Grid from '@mui/material/Grid';
 import Button from '@mui/material/Button';
@@ -21,32 +23,7 @@ const Home = () => {
 			{/* grid contenedor de la imagen y titulo */}
 			<Grid container justifyContent="center" spacing={6}>
 				{/* grid Titulo y botones */}
-				<Grid
-					item
-					container
-					direction="column"
-					justifyContent="center"
-					alignItems="baseline"
-					lg={6}
-					md={6}
-					sm={12}
-					xs={12}
-				>
-					{/* grid  Titulo */}
-					<Grid item>
-						<h1 style={{ marginBottom: '1%' }}>Soy Santiago Clemenzi</h1>
-						<h3 style={{ marginTop: '0px' }}>Fullstack Developer</h3>
-						{/* grid botones */}
-						<Grid item lg={12} md={12} sm={12} xs={12}>
-							<Button variant="outlined" sx={{ margin: '1%' }}>
-								Contactar
-							</Button>
-							<Button variant="outlined" sx={{ margin: '1%' }}>
-								Curriculum
-							</Button>
-						</Grid>
-					</Grid>
-				</Grid>
+				<Header/>
 
 				{/* Grid Imagen */}
 				<Grid
