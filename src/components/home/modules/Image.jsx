@@ -4,7 +4,7 @@ import * as React from 'react';
 import { Grid, Card, CardMedia } from '@mui/material';
 
 // images
-import portada from '../../images/programmingScreen.jpg';
+import portada from '../../../images/programmingScreen.jpg';
 
 const Image = () => {
 	return (

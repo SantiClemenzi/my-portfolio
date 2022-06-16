@@ -4,9 +4,9 @@ import * as React from 'react';
 import { Grid, Box } from '@mui/material';
 
 // Elements
-import Header from './Header';
-import Image from './Image';
-import Icons from './Icons';
+import Header from './modules/Header';
+import Image from './modules/Image';
+import Icons from './modules/Icons';
 
 const Home = () => {
 	return (
