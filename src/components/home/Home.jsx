@@ -1,16 +1,11 @@
 import * as React from 'react';
 
+// MUI
+import { Grid, Box } from '@mui/material';
+
 // Elements
 import Header from './Header';
-// MUI
-import Grid from '@mui/material/Grid';
-import Button from '@mui/material/Button';
-import Card from '@mui/material/Card';
-import CardMedia from '@mui/material/CardMedia';
-import { Typography, Box } from '@mui/material';
-
-// images
-import portada from '../../images/programmingScreen.jpg';
+import Image from './Image';
 
 const Home = () => {
 	return (
@@ -19,33 +14,11 @@ const Home = () => {
 			<Grid item>
 				<p>Iconos de LinkedIn y git hub</p>
 			</Grid>
-
-			{/* grid contenedor de la imagen y titulo */}
 			<Grid container justifyContent="center" spacing={6}>
 				{/* grid Titulo y botones */}
-				<Header/>
-
+				<Header />
 				{/* Grid Imagen */}
-				<Grid
-					item
-					direction="column"
-					justifyContent="center"
-					alignItems="center"
-					lg={6}
-					md={6}
-					sm={12}
-					xs={12}
-				>
-					<Card sx={{ maxWidth: '400' }}>
-						<CardMedia
-							component="img"
-							height="400"
-							width="500"
-							image={portada}
-							alt="Programming"
-						/>
-					</Card>
-				</Grid>
+				<Image />
 			</Grid>
 		</Box>
 	);
