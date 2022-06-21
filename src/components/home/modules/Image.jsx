@@ -4,7 +4,7 @@ import * as React from 'react';
 import { Grid, Card, CardMedia } from '@mui/material';
 
 // images
-import portada from '../../../images/programmingScreen.jpg';
+import portada from '../../../images/human1.svg';
 
 const Image = () => {
 	return (
@@ -18,11 +18,11 @@ const Image = () => {
 			sm={12}
 			xs={12}
 		>
-			<Card sx={{ maxWidth: '400' }}>
+			<Card sx={{  maxWidth: '300' }}>
 				<CardMedia
 					component="img"
 					height="400"
-					width="500"
+					width="300"
 					image={portada}
 					alt="Programming"
 				/>
