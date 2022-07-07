@@ -70,7 +70,7 @@ const AboutMe = () => {
 							alignItems="center"
 							style={{ maxWidth: '90%' }}
 						>
-							<Box sx={{ maxWidth: '20%', minHeight:'50px' }}>
+							<Box sx={{ maxWidth: '20%', minHeight: '50px' }}>
 								<Card variant="outlined">
 									<CardContent>
 										<Typography variant="h5" component="div">
@@ -82,7 +82,7 @@ const AboutMe = () => {
 									</CardContent>
 								</Card>
 							</Box>
-							<Box sx={{ maxWidth: '20%', minHeight:'50px' }}>
+							<Box sx={{ maxWidth: '20%', minHeight: '50px' }}>
 								<Card variant="outlined">
 									<CardContent>
 										<Typography variant="h5" component="div">
@@ -94,7 +94,7 @@ const AboutMe = () => {
 									</CardContent>
 								</Card>
 							</Box>
-							<Box sx={{ maxWidth: '20%', minHeight:'50px' }}>
+							<Box sx={{ maxWidth: '20%', minHeight: '50px' }}>
 								<Card variant="outlined">
 									<CardContent>
 										<Typography variant="h5" component="div">
